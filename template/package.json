@@ -7,12 +7,25 @@
     "test": "jest"
   },
   "dependencies": {
+    "@react-native-community/masked-view": "^0.1.10",
+    "@react-navigation/native": "^5.8.10",
+    "@react-navigation/stack": "^5.12.8",
     "@react-native-community/async-storage": "^1.12.1",
+    "appcenter": "^4.0.2",
+    "appcenter-analytics": "^4.0.2",
+    "appcenter-crashes": "^4.0.2",
     "axios": "^0.21.1",
     "babel-plugin-module-resolver": "^4.1.0",
     "react": "16.8.1",
     "react-native": "0.59.0-rc.1",
-    "react-native-splash-screen": "^3.2.0"
+    "react-hook-form": "^6.15.1",
+    "react-native-gesture-handler": "^1.10.0",
+    "react-native-reanimated": "^1.13.2",
+    "react-native-safe-area-context": "^3.1.9",
+    "react-native-screens": "^2.17.1",
+    "react-native-splash-screen": "^3.2.0",
+    "react-native-vector-icons": "^8.0.0",
+    "react-navigation": "^4.4.3"
   },
   "devDependencies": {
     "@babel/core": "^7.3.3",
