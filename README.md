@@ -20,12 +20,12 @@ No arquivo `babel.config.js` encontram-se alguns `alias` pre-configurados:
 
 ```JS
 alias: {
-  src: "./src",
-  assets: "./src/assets",
-  components: "./src/components",
-  contexts: "./src/contexts",
-  routes: "./src/routes",
-  utils: "./src/utils",
+  "@src": "./src",
+  "@assets": "./src/assets",
+  "@components": "./src/components",
+  "@contexts": "./src/contexts",
+  "@routes": "./src/routes",
+  "@utils": "./src/utils",
 },
 ```
 
