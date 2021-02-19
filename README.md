@@ -1,10 +1,22 @@
-## IdopterLabs React Native Template
+# Idopter Labs React Native Template
 
-Esse template tem todas as dependências necessárias para o escopo inicial e estrutura de pastas que usamos nos projetos e que melhor se adequa aos nossos padrões.
+🇺🇸 Scroll down for an english version.
 
-Na raiz do projeto temos `.env.example` e nele toda variável tem o prefixo `RN_`, com ele é possível automatizar as variáveis de ambiente do AppCenter
+🇧🇷 Este template contém bibliotecas e padrões de projeto que adotamos em aplicativos React Native na Idopter Labs.
 
-No `babel.config.js` foram pré-configurados alguns `alias` que são referentes às pastas
+## Usando o template
+
+`npx react-native init fifaSearch --template @iagocavalcante/idopterlabs-react-native-template`
+
+## Variáveis de Ambiente
+
+O arquivo `.env.example` é um exemplo de como o aplicativo lê variáveis de ambiente. Todas as variáveis de ambiente devem adotar o prefixo `RN_`. Com isso, conseguimos integrá-las ao nosso processo de desenvolvimento e ao mesmo tempo ao processo de Continuous Integration (CI) utilizando o AppCenter.
+
+Copie ou modifique o arquivo para `.env`. Variáveis de ambiente adicionadas a este arquivo devem também ser adicionadas ao arquivo `src/utils/envs.js`.
+
+## Resolução de Módulos
+
+No arquivo `babel.config.js` encontram-se alguns `alias` pre-configurados:
 
 ```JS
 alias: {
@@ -17,3 +29,6 @@ alias: {
 },
 ```
 
+Isso permite que referências a modulos nestas pastas sejam feitas através da syntaxe `@src/<arquivo>`, `@assets/<arquivo>`, etc.
+
+🇺🇸 This template includes libraries and patterns we use across our React Native applications at Idopter Labs.
