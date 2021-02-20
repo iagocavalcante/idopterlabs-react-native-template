@@ -1,15 +1,14 @@
 require_relative '../node_modules/react-native/scripts/react_native_pods'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
-platform :ios, '10.3'
-install! 'cocoapods', :disable_input_output_paths => true
+platform :ios, '10.0'
 
-target 'ProjectName' do
+target 'Boilerplate' do
   config = use_native_modules!
 
   use_react_native!(:path => config["reactNativePath"])
 
-  target 'ProjectNameTests' do
+  target 'BoilerplateTests' do
     inherit! :complete
     # Pods for testing
   end
@@ -18,16 +17,16 @@ target 'ProjectName' do
   #
   # Note that if you have use_frameworks! enabled, Flipper will not work and
   # you should disable these next few lines.
-  use_flipper!({ 'Flipper-Folly' => '2.3.0' })
+  use_flipper!
   post_install do |installer|
     flipper_post_install(installer)
   end
 end
 
-target 'ProjectName-tvOS' do
-  # Pods for ProjectName-tvOS
+target 'Boilerplate-tvOS' do
+  # Pods for Boilerplate-tvOS
 
-  target 'ProjectName-tvOSTests' do
+  target 'Boilerplate-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end
